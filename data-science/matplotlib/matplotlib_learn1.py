@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np 
 
-df = pd.read_csv("pokemon.csv", index_col = "Name")
+df = pd.read_csv("../data-bases/pokemon.csv", index_col = "Name")
 
 generationalGroup = df.groupby("Generation")
 average = generationalGroup["Total"].mean()
