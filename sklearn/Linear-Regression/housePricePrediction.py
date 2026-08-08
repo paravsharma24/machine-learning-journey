@@ -20,11 +20,18 @@ model.fit(X,y)
 area = int(input("Enter Area for the house: "))
 bedrooms = int(input("Enter number of bedrooms in house: "))
 
-prediction = model.predict([[area, bedrooms]])[0]
+new_house = pd.DataFrame({
+    "area" : [area],
+    "bedrooms" : [bedrooms]
+})
+prediction = model.predict(new_house)[0]
 
 print(f"Predicted price: ₹{prediction:.2f} lakh")
+r2 = model.score(X, y)
+print(f"R²: {r2:.4f}")
 
 predictions = model.predict(X)
+
 
 fig, ax = plt.subplots(1, 2, figsize=(12, 5))
 
