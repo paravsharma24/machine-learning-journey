@@ -24,7 +24,22 @@ prediction = model.predict([[area, bedrooms]])[0]
 
 print(f"Predicted price: ₹{prediction:.2f} lakh")
 
-plt.scatter(df["area"], df["price"])
-plt.xlabel("Area")
-plt.ylabel("Price")
+predictions = model.predict(X)
+
+fig, ax = plt.subplots(1, 2, figsize=(12, 5))
+
+# Area vs Price
+ax[0].scatter(df["area"], df["price"])
+ax[0].plot(df["area"], predictions)
+ax[0].set_xlabel("Area")
+ax[0].set_ylabel("Price")
+ax[0].set_title("Area vs Price")
+
+# Bedrooms vs Price
+ax[1].scatter(df["bedrooms"], df["price"])
+ax[1].set_xlabel("Bedrooms")
+ax[1].set_ylabel("Price")
+ax[1].set_title("Bedrooms vs Price")
+
+plt.tight_layout()
 plt.show()
