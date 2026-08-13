@@ -13,3 +13,6 @@ __pycache__/
 
 # OS files
 .DS_Store
+
+# Test Files
+test-files/
