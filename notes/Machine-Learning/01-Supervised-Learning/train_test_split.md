@@ -83,4 +83,4 @@ Compare Predictions with y_test
 R² Score
 ```
 
-This is the basic workflow I used while learning linear regression with scikit-learn.
+This is the basic workflow I used while learning linear regression with scikit-learn..
