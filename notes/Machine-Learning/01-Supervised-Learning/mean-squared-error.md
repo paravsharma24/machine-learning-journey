@@ -4,9 +4,9 @@ Mean Squared Error (MSE) is a regression metric used to measure how far a model'
 
 ## Formula
 
-[
+$$
 MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
-]
+$$
 
 Where:
 

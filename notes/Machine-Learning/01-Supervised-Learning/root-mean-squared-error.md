@@ -4,15 +4,15 @@ Root Mean Squared Error (RMSE) is a regression metric that measures the typical 
 
 ## Formula
 
-[
+$$
 RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}
-]
+$$
 
 RMSE is simply the **square root of MSE**:
 
-[
+$$
 RMSE = \sqrt{MSE}
-]
+$$
 
 Where:
 
@@ -85,13 +85,13 @@ The difference is:
 
 For example:
 
-[
+$$
 MSE = 25
-]
+$$
 
-[
+$$
 RMSE = \sqrt{25}=5
-]
+$$
 
 ## Interpreting RMSE
 

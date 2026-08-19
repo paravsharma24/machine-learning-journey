@@ -4,9 +4,9 @@ Mean Absolute Error (MAE) is a regression metric used to measure the average abs
 
 ## Formula
 
-[
+$$
 MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i-\hat{y}_i|
-]
+$$
 
 Where:
 
@@ -74,21 +74,21 @@ Error:      2
 
 If we simply averaged the errors:
 
-[
+$$
 \frac{-2+2}{2}=0
-]
+$$
 
 It would incorrectly suggest that there was no error.
 
 Taking the absolute value prevents positive and negative errors from cancelling each other:
 
-[
+$$
 |-2|=2
-]
+$$
 
-[
+$$
 |2|=2
-]
+$$
 
 ## MAE vs MSE
 
@@ -96,17 +96,17 @@ The main difference is how they treat errors.
 
 ### MAE
 
-[
+$$
 MAE = \frac{1}{n}\sum|y-\hat{y}|
-]
+$$
 
 MAE treats errors linearly.
 
 ### MSE
 
-[
+$$
 MSE = \frac{1}{n}\sum(y-\hat{y})^2
-]
+$$
 
 MSE heavily penalizes large errors because they are squared.
 
