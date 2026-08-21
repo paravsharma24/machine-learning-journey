@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_absolute_error, root_mean_squared_error, mean_squared_error
 
-df = pd.read_csv("../04-data-science/data-bases/house_price_lasso_practice.csv")
+df = pd.read_csv("../../04-data-science/data-bases/house_price_lasso_practice.csv")
 
 X = df.drop(["price_lakh"], axis = 1)
 
