@@ -57,16 +57,46 @@ The focus is on understanding the concepts behind machine learning algorithms an
 ```text
 machine-learning-journey/
 │
+├── data-science/
+│   ├─── data-bases/
+│   │   ├── house_price_ridge_practice.csv
+│   │   ├── pokemon.csv
+│   │
+│   ├── matplotlib
+│   │   └── ...
+│   │
+│   └── pandas
+│       └── ...
+│
 ├── notes/
 │   └── Machine-Learning/
 │       └── 01-Supervised-Learning/
+│           ├── 01-Linear-Regression/
+│           │   ├── readme.md
+│           │   ├── mean-squared-error.md
+│           │   ├── mean-absolute-error.md
+│           │   ├── root-mean-squared-error.md
+│           │   ├── r2-score.md
+│           │   └── train-test-split.md
+│           │
+│           └── 02-Ridge-Regression/
+│               └── readme.md
 │
 ├── sklearn/
 │   └── Linear-Regression/
 │       ├── Linear-Regression/
+│       │   └── ...
+│       │
 │       └── Polynomial-Regression/
+│           └── ...
 │
-└── README.md
+├── sklearn/
+│   └── Ridge-Regression/
+│       ├── 01-ridge-regression.py
+│       └── readme.md
+│
+├── README.md
+└── .gitignore
 ```
 
 The repository is organized into two main parts:
