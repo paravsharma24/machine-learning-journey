@@ -284,25 +284,3 @@ plt.title("Elastic Net: Actual vs Predicted")
 
 plt.show()
 ```
-
----
-
-## Next
-
-Next topic: **Logistic Regression**
-
-The goal is to move from regression into classification and learn:
-
-```text
-Sigmoid
-↓
-Probability
-↓
-Classification
-↓
-Confusion Matrix
-↓
-Precision / Recall / F1
-↓
-ROC-AUC
-```
