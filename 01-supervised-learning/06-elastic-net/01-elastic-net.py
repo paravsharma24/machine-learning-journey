@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from sklearn.linear_model import ElasticNet
+from sklearn.linear_model import ElasticNetCV
 from sklearn.datasets import make_regression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error, root_mean_squared_error
@@ -17,7 +17,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state = 42
 )
 
-reg = ElasticNet(random_state = 0)
+reg = ElasticNetCV(random_state = 0)
 reg.fit(X_train, y_train)
 
 print(reg.coef_)
